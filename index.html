@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎬 Movie Search App</h1>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search movies..." />
+    <button onclick="searchMovies()">Search</button>
+
+    <select id="filterType">
+      <option value="">All</option>
+      <option value="movie">Movie</option>
+      <option value="series">Series</option>
+    </select>
+
+    <select id="sortType">
+      <option value="">Sort</option>
+      <option value="year">Year</option>
+      <option value="name">Name</option>
+    </select>
+  </div>
+
+  <div id="moviesContainer" class="movies"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
